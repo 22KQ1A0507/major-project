@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+      body{
+        background-size: 1600px 800px;
+        background-image: url("https://media.istockphoto.com/id/1363817537/photo/luxury-modern-house-interior-with-corner-sofa-bookshelf-and-staircase.jpg?s=612x612&w=is&k=20&c=cp-RMm2JOnaJsM772JVcy9AR9vQ5_4XHjimktSSrvgo=");
+      }
+     
+     
+    .back-vedio{
+      position: relative;
+      right: 0;
+      bottom:0;
+    left:0;
+    top:0
+      z-index:-1;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  .{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                position:center;
+                font-family:"poppins",sanas-serif;
+            }
+            body{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                min-height:100vh;
+                position: center;
+            
+            }
+  .wrapper{
+    width: 420px;
+    background: rgb(14, 178, 184);
+    position: center;
+    color:black;
+
+  }
+</style>
+<script>
+  function myfunction() {
+    var  uname=document.myform.username.value;
+    var pword=document.myform.password.value;
+               if(uname==null|| uname==""){
+                         alert("username cant be null")
+                          return false;
+    
+               }else if(pword.length<6){
+                         alert("password cannot cannot be less than 6")
+                         return false;
+    
+               }else{
+                     return true;
+                    }
+  }
+    
+
+</script>
+<body>
+  <center>
+    <form name="myform" action="contactusweb.html" class="img-rounded"
+    onsubmit="return myfunction(this)">
+<div class="wrapper">
+<div class="box-rounded">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">Login</h2>
+      <form>
+        <div class=" img-rounded">
+        <div class="form-group">
+          <label for="username">Username</label>
+
+          <i class="fa fa-user-o"></i><input type="text" class="box-rounded" id="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <i class="fa fa-key"></i>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+       
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember Me</label>
+         </div>
+         <button type="submit" class="btn btn-primary btn-block">Login</button><br></br>
+         <button><a href="file:///C:/Users/ashaj/OneDrive/Desktop/UI%20%20development/1.Html/2.project/mywebsite.html/forgetpass.html">forgetpassword</a></button><br></br>
+         <button><a href="file:///C:/Users/ashaj/OneDrive/Desktop/UI%20%20development/1.Html/css2/task6/singin.html">Don't have an accont</a></button>
+         
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+</center>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
